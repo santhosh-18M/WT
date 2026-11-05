@@ -1,0 +1,55 @@
+.dashboardPageShell {
+  padding: clamp(16px, 3vw, 24px);
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.dashboardTopBlock {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.filterButtonRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filterButton,
+.activeFilterButton {
+  padding: 8px 12px;
+}
+
+.activeFilterButton {
+  background: var(--secondaryAccent);
+  color: white;
+  border: 1px solid var(--secondaryAccent);
+}
+
+.reportGridLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.statusMessageText {
+  color: var(--textColorMuted);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .dashboardTopBlock {
+    align-items: flex-start;
+  }
+
+  .reportGridLayout {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}

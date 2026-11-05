@@ -1,0 +1,137 @@
+.homePageShell {
+  padding: clamp(16px, 3vw, 24px);
+}
+
+.heroBannerSection {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.heroTextBlock,
+.heroInfoCard,
+.signupFormBox,
+.loginContainer,
+.uploadSection,
+.editReportBox {
+  background: var(--panelBackground);
+  border: 1px solid var(--panelBorder);
+  border-radius: 8px;
+}
+
+.heroTextBlock {
+  padding: clamp(18px, 3vw, 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.heroLabelText {
+  display: inline-block;
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primaryAccentDark);
+  font-weight: 700;
+}
+
+.heroHeadline {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.heroDescription {
+  max-width: 60ch;
+  margin: 12px 0 0;
+  color: var(--textColorMuted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.heroActionRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.primaryActionButton,
+.secondaryActionButton,
+.primaryFormButton,
+.filterButton,
+.activeFilterButton,
+.actionButtonEdit,
+.deleteButtonRed {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.primaryActionButton,
+.primaryFormButton,
+.actionButtonEdit {
+  background: var(--primaryAccent);
+  color: white;
+}
+
+.secondaryActionButton,
+.filterButton {
+  background: #ffffff;
+  border: 1px solid var(--secondaryAccent);
+  color: var(--secondaryAccent);
+}
+
+.heroInfoCard {
+  padding: clamp(18px, 3vw, 24px);
+}
+
+.heroCardTitle {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.featureListBlock {
+  padding-left: 18px;
+  line-height: 1.6;
+  color: var(--textColorMuted);
+  margin: 0;
+}
+
+.primaryActionButton:hover,
+.secondaryActionButton:hover,
+.primaryFormButton:hover,
+.filterButton:hover,
+.activeFilterButton:hover,
+.actionButtonEdit:hover,
+.deleteButtonRed:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .heroBannerSection {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .heroHeadline {
+    font-size: 1.75rem;
+  }
+
+  .heroActionRow {
+    flex-direction: column;
+  }
+
+  .primaryActionButton,
+  .secondaryActionButton {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,91 @@
+.govDashboardShell {
+  padding: clamp(16px, 3vw, 24px);
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.govSidebarPanel {
+  position: sticky;
+  top: 18px;
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+  color: #e5eef9;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.govBrandBlock {
+  display: grid;
+  gap: 8px;
+}
+
+.govBrandKicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: #93c5fd;
+  font-weight: 700;
+}
+
+.govSidebarNav {
+  display: grid;
+  gap: 8px;
+}
+
+.govSidebarLink {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #f8fafc;
+}
+
+.govSidebarLink:hover {
+  background: rgba(59, 130, 246, 0.2);
+}
+
+.govSidebarLinkActive {
+  background: rgba(59, 130, 246, 0.35);
+  border: 1px solid rgba(147, 197, 253, 0.45);
+}
+
+.govNoticeCard {
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.govNoticeTitle {
+  margin: 0 0 8px;
+}
+
+.govContentColumn {
+  display: grid;
+  gap: 16px;
+}
+
+.govLoginContainer {
+  border: 1px solid rgba(37, 99, 235, 0.14);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+.govLoginCopyText {
+  margin: 0;
+  color: var(--textColorMuted);
+  line-height: 1.6;
+}
+
+@media (max-width: 960px) {
+  .govDashboardShell {
+    grid-template-columns: 1fr;
+  }
+
+  .govSidebarPanel {
+    position: static;
+  }
+}

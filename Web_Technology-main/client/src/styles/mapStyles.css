@@ -1,0 +1,30 @@
+.dashboardMapBox {
+  margin-bottom: 14px;
+  padding: clamp(14px, 2.5vw, 18px);
+  border: 1px solid var(--panelBorder);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.mapHeadingText {
+  margin-top: 0;
+}
+
+.mapLegendText {
+  margin: -6px 0 10px;
+  color: var(--textColorMuted);
+  font-size: 0.92rem;
+}
+
+.leafletDamageMap {
+  width: 100%;
+  height: clamp(240px, 45vw, 360px);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .dashboardMapBox {
+    margin-bottom: 10px;
+  }
+}

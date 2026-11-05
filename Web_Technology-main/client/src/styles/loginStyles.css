@@ -1,0 +1,71 @@
+.authPageShell {
+  padding: clamp(16px, 3vw, 24px);
+  display: flex;
+  justify-content: center;
+}
+
+.loginContainer,
+.signupFormBox {
+  width: min(100%, 520px);
+  padding: clamp(16px, 3vw, 24px);
+  display: grid;
+  gap: 12px;
+}
+
+.authTitleText,
+.pageHeadingText {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.6rem;
+}
+
+.authFormLayout,
+.editFormLayout,
+.uploadFormBox {
+  display: grid;
+  gap: 12px;
+}
+
+.fieldLabelText {
+  font-weight: 700;
+  color: var(--textColorMuted);
+}
+
+.formInputField {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--panelBorder);
+  background: white;
+}
+
+.primaryFormButton {
+  margin-top: 6px;
+  width: 100%;
+}
+
+.authFooterText {
+  margin-bottom: 0;
+  color: var(--textColorMuted);
+}
+
+.successMessageText {
+  color: var(--successTone);
+  font-weight: 700;
+}
+
+.errorMessageText {
+  color: var(--errorTone);
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .authPageShell {
+    padding: 16px;
+  }
+
+  .authTitleText,
+  .pageHeadingText {
+    font-size: 1.4rem;
+  }
+}
